@@ -67,7 +67,7 @@ const Header = () => {
                   <Link href="/login">
                     <Button bgColor='true'>Log in</Button>
                   </Link>
-                  <Link href="/create-account">
+                  <Link href="/createAccount">
                     <Button>Create Account</Button>
                   </Link>
                 </>

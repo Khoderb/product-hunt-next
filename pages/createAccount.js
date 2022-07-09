@@ -5,8 +5,7 @@ import validateCreateAccount from '../validations/validateCreateAccount'
 
 
 //Firebase
-import { FirebaseContext } from "../firebase"
-import useContext from "react"
+import firebase from "../firebase"
 import { useState } from "react"
 
 //Router
@@ -15,7 +14,6 @@ import { useRouter } from "next/router"
 
 export default function CreateAccount() {
 
-  const { firebase } = useContext(FirebaseContext)
 
   const router = useRouter()
   const [error, setError] = useState(false)
