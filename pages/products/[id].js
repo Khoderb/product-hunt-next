@@ -226,7 +226,7 @@ const Product = () => {
                             <div>
                                 {createdAt && <p>Published at {formatDistanceToNow(new Date(createdAt))}</p>}    
                                 {creator && <p>By {creator.name} from {enterprise} </p>}
-                                {urlImg && <Image src={urlImg} alt={`Product ${product.name}`}/>}
+                                {urlImg && <Image src={urlImg} width={400} height={600} alt={`Product ${product.name}`}/>}
                                 <p>{description}</p>
                                 {user&&
                                     <>

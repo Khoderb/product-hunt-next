@@ -1,10 +1,7 @@
 import styled from "@emotion/styled"
 import { formatDistanceToNow } from 'date-fns'
 import Link from "next/link"
-
-const Img = styled.img`
-    border-radius: 50%;
-`
+import Image from "next/image"
 
 const Li = styled.li`
     padding: 3rem 2rem 1rem;
@@ -97,7 +94,7 @@ const ProductDetails = ({product}) => {
             <Li>
                 <Description>
                     <div>
-                        <Img src={urlImg} height={150} width ={150} alt="product" />
+                        <Image src={urlImg} width={400} height={600} alt="product" />
                     </div>
                     <div>
                         <Link href="/products/[id]" as={`/products/${id}`}>
